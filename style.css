@@ -1,0 +1,164 @@
+body {
+  margin:20px 0;
+  padding:0px;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+}
+#container {
+  margin: 0 auto;
+  padding:20px;
+  width:800px;
+}
+ul {
+  margin:5px 0;
+  font-size:15px;
+}
+li {
+  margin-top:3px;
+  font-size: 15px;
+  line-height:17px;
+}
+h1 {
+  font-size:44px;
+  font-family: 'Bitter', Georgia, serif;
+  font-weight:bold;
+  margin: 10px 0 20px 0;
+  color:#000;
+  border-bottom:2px solid #000;
+}
+h2 {
+  font-family: 'Bitter', serif;
+  font-size:30px;
+  margin: 20px 0 5px 0;
+}
+h3 {
+  font-family: 'Bitter', serif;
+  font-size:20px;
+  margin: 20px 0 0 0;
+}
+h4 {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 15px;
+  line-height:18px;
+  margin: 15px 0 0 0;
+}
+h4#references {
+  font-family: 'Bitter', serif;
+  font-size:20px;
+  font-style: italic;
+  font-weight:normal;
+}
+h5 {
+  font-weight:normal;
+  font-style:italic;
+  font-size:15px;
+  margin-top:0;
+  margin-bottom:10px;
+}
+p {
+  font-size: 15px;
+  line-height:15px;
+  padding: 5px 0; 
+  margin:0 0 5px 0;
+}
+a {
+  font-weight:bold;
+  color:#c0392b;
+  -ms-word-break: break-all;
+  
+     word-break: break-all;
+
+     /* Non standard for webkit */
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+.clear {
+  clear:both;
+}
+.third {
+  display:inline-block;
+  vertical-align:top;
+  width:28%;
+  margin-right:4%;
+  margin-bottom:10px;
+}
+
+@media all and (max-width: 880px) {
+  #container {
+    width:auto;
+    margin: 5px auto;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .third {
+    float:none;
+    width:auto;
+  }
+  h1 {
+    font-size: 35px;
+  }
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+  h1 {
+    font-size:44px;
+    margin: 0 0 15px 0;
+  }
+  h2, h3, h4 {
+    page-break-after:avoid;
+  }
+  h2 {
+    font-size: 25px;
+    margin: 15px 0 5px 0;
+  }
+  h3 {
+    font-size: 18px;
+    margin: 15px 0 0 0;
+  }
+  h4 {
+    font-size: 14px;
+    line-height:16px;
+  }
+  a {
+    color:#000;
+    font-weight:inherit;
+    text-decoration: none;
+  }
+  p, li {
+    font-size:13px;
+    line-height:14px;
+    page-break-inside:avoid;
+  }
+  .floated {
+    width:340px;
+    float:left;
+    display:inline-block;
+    vertical-align:top;
+    padding:0 5px 5px 0;
+  }
+  #contact {
+    width:250px !important;
+  }
+  .floated div {
+    display:inline-block;
+    float:none;
+  }
+  container {
+    margin: 0 auto;
+    width:auto;
+  }
+}
+
+@page  
+{ 
+    size: auto;   /* auto is the initial value */ 
+
+    /* this affects the margin in the printer settings */ 
+    margin: 20mm 15mm 20mm 15mm;  
+} 
