@@ -33,7 +33,7 @@ h2 {
 h3 {
   font-family: 'Bitter', serif;
   font-size:20px;
-  margin: 20px 0 0 0;
+  margin: 14px 0 0 0;
 }
 h4 {
   font-family: 'Open Sans', Helvetica, sans-serif;
@@ -84,6 +84,38 @@ a {
   margin-right:4%;
   margin-bottom:10px;
 }
+.half {
+  display:inline-block;
+  vertical-align:top;
+  float:right;
+  width:40%;
+  margin-left:5%;
+}
+.half + .half {
+  margin:0;
+  float:none;
+  width:55%;
+}
+.class {
+  margin-bottom:15px;
+}
+/*#info ul {
+  list-style-type:none;
+  margin: 5px 0 10px 0;
+  padding:0;
+}
+#info ul li {
+  display:inline-block;
+}
+
+#info ul li:after {
+  content: "-";
+  padding: 0 15px;
+}
+
+#info ul li:last-child:after {
+  content: "";
+}*/
 
 @media all and (max-width: 880px) {
   #container {
@@ -99,6 +131,25 @@ a {
   }
   h1 {
     font-size: 35px;
+  }
+}
+
+@media print and (max-width: 780px) {
+  .half {
+    width:30%;
+    margin-left:5%;
+  }
+  .half + .half {
+    width:65%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .half, .half + .half {
+    width:auto;
+    margin:0;
+    float:none;
+    display:block;
   }
 }
 
