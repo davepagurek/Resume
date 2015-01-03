@@ -40,6 +40,7 @@ h4 {
   font-size: 15px;
   line-height:18px;
   margin: 15px 0 0 0;
+  font-weight: normal;
 }
 h4#references {
   font-family: 'Bitter', serif;
@@ -61,7 +62,6 @@ p {
   margin:0 0 5px 0;
 }
 a {
-  font-weight:bold;
   color:#c0392b;
   -ms-word-break: break-all;
   
@@ -73,6 +73,9 @@ a {
 -webkit-hyphens: auto;
    -moz-hyphens: auto;
         hyphens: auto;
+}
+h4 a {
+  font-weight: bold;
 }
 .clear {
   clear:both;
