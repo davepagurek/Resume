@@ -1,9 +1,43 @@
 body {
-  margin:20px 0;
-  padding:0px;
+  margin: 0;
+  padding: 0;
   font-family: 'Open Sans', Helvetica, sans-serif;
 }
-#container {
+
+#bg {
+    background-image: url(http://www.davepagurek.com/wp-content/uploads/2014/08/cliffs-blurred.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+}
+
+#bg h5 {
+    color: #FFF;
+}
+
+#buttons {
+    position:absolute;
+    top:0;
+    right:0;
+    margin: 10px;
+}
+
+#buttons a {
+    display:inline-block;
+    background-color:#FFF;
+    font-size:12px;
+    color:#000;
+    padding:6px;
+    border-radius:4px;
+    transition: all 0.3s ease;
+    text-decoration:none;
+}
+
+#buttons a:hover {
+    background-color:#EEE;
+}
+
+.container {
   margin: 0 auto;
   padding:20px;
   width:800px;
@@ -11,6 +45,7 @@ body {
 ul {
   margin:5px 0;
   font-size:15px;
+  padding-left:28px;
 }
 li {
   margin-top:3px;
@@ -22,12 +57,11 @@ h1 {
   font-family: 'Bitter', Georgia, serif;
   font-weight:bold;
   margin: 10px 0 20px 0;
-  color:#000;
-  border-bottom:2px solid #000;
+  color:#FFF;
 }
 h2 {
   font-family: 'Bitter', serif;
-  font-size:30px;
+  font-size:25px;
   margin: 20px 0 5px 0;
 }
 h3 {
@@ -57,7 +91,7 @@ h5 {
 }
 p {
   font-size: 15px;
-  line-height:15px;
+  line-height:17px;
   padding: 5px 0; 
   margin:0 0 5px 0;
 }
@@ -121,7 +155,7 @@ h4 a {
 }*/
 
 @media all and (max-width: 880px) {
-  #container {
+  .container {
     width:auto;
     margin: 5px auto;
   }
@@ -139,11 +173,11 @@ h4 a {
 
 @media print and (max-width: 780px) {
   .half {
-    width:30%;
+    width:35%;
     margin-left:5%;
   }
   .half + .half {
-    width:65%;
+    width:60%;
   }
 }
 
@@ -156,19 +190,36 @@ h4 a {
   }
 }
 
+@page {
+    margin: 15mm 0;
+}
+
+@page:first {
+    margin-top:0;
+}
+
+
 @media print {
   body {
     margin: 0;
   }
+  #buttons {
+      display:none;
+  }
   h1 {
     font-size:44px;
-    margin: 0 0 15px 0;
+    margin: 0;
   }
   h2, h3, h4 {
     page-break-after:avoid;
+    page-break-inside: avoid;
+  }
+  ul {
+      page-break-inside: avoid;
+      page-break-before: avoid;
   }
   h2 {
-    font-size: 25px;
+    font-size: 18px;
     margin: 15px 0 5px 0;
   }
   h3 {
@@ -186,7 +237,7 @@ h4 a {
   }
   p, li {
     font-size:13px;
-    line-height:14px;
+    line-height:15px;
     page-break-inside:avoid;
   }
   .floated {
@@ -196,23 +247,44 @@ h4 a {
     vertical-align:top;
     padding:0 5px 5px 0;
   }
-  #contact {
-    width:250px !important;
-  }
+
   .floated div {
     display:inline-block;
     float:none;
   }
-  container {
-    margin: 0 auto;
+  
+  #bg {
+    padding-top:20px;
+  }
+  .container {
+    padding:15px 15mm;
     width:auto;
   }
+  /*#bg h5 {
+    display:none;
+  }*/
+
+
+  .print .container {
+    padding: 10px 15mm;
+  }
+  .print #bg {
+    background-image: none;
+    padding-top:0;
+  }
+  .print h1 {
+    color:#000;
+    border-bottom:2px solid #000;
+    margin-top:10mm;
+  }
+  .print #bg h5 {
+      color:#000;
+      margin: 10px 0 -15px 0;
+  }
+  .print .container {
+    margin: 0 auto;
+  }
+
 }
 
-@page  
-{ 
-    size: auto;   /* auto is the initial value */ 
 
-    /* this affects the margin in the printer settings */ 
-    margin: 20mm 15mm 20mm 15mm;  
-} 
