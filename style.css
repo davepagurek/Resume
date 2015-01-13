@@ -11,8 +11,36 @@ body {
     padding-top: 80px;
 }
 
-#bg h5 {
-    color: #FFF;
+
+
+#bg ul#contact {
+    list-style-type:none;
+    color:#FFF;
+    margin-left:0;
+    padding-left: 0;
+    font-size: 0;
+}
+
+#bg ul#contact li {
+    font-size:14px;
+    list-style-type:none;
+    display:inline-block;
+    /*margin-right: 20px;*/
+}
+
+#bg ul#contact li:after {
+    content: "\2022";
+    margin: 0 12px;
+}
+
+#bg ul#contact li:last-child:after {
+    content: "";
+}
+
+
+
+#bg ul#contact a {
+    color:#FFF;
 }
 
 #buttons {
@@ -79,7 +107,7 @@ h4 {
 h4#references {
   font-family: 'Bitter', serif;
   font-size:20px;
-  font-style: italic;
+  font-style: ;
   font-weight:normal;
 }
 h5 {
@@ -88,6 +116,11 @@ h5 {
   font-size:15px;
   margin-top:0;
   margin-bottom:10px;
+}
+#bg h5 {
+    color: #FFF;
+    font-style:normal;
+    font-size: 14px;
 }
 p {
   font-size: 15px;
@@ -260,10 +293,12 @@ h4 a {
     padding:15px 15mm;
     width:auto;
   }
-  /*#bg h5 {
-    display:none;
-  }*/
-
+  #bg ul#contact {
+    margin: 0;
+  }
+  #bg h5 {
+    margin-bottom:0;
+  }
 
   .print .container {
     padding: 10px 15mm;
@@ -272,6 +307,16 @@ h4 a {
     background-image: none;
     padding-top:0;
   }
+  .print #bg ul#contact {
+      color:#000;
+      margin:10px 0 0 0;
+  }
+  .print #bg ul#contact li:after {
+      color:#000;
+  }
+  .print #bg ul#contact li a {
+      color:#000;
+  }
   .print h1 {
     color:#000;
     border-bottom:2px solid #000;
@@ -279,7 +324,7 @@ h4 a {
   }
   .print #bg h5 {
       color:#000;
-      margin: 10px 0 -15px 0;
+      margin: 5px 0 -15px 0;
   }
   .print .container {
     margin: 0 auto;
