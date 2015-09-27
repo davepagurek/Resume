@@ -262,9 +262,7 @@ h4 a, li a {
       margin-top:10px;
     }
     a {
-      color:#000;
       font-weight:inherit;
-      text-decoration: none;
     }
     p, li, .main h5 {
       font-size:13px;
@@ -283,6 +281,10 @@ h4 a, li a {
       margin-bottom:10px;
     }
 
+    .print a {
+      color:#000;
+      text-decoration: none;
+    }
     .print .container {
       padding: 5px 10mm;
       margin: 0 auto;
