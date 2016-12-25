@@ -152,6 +152,8 @@ p {
 }
 a {
   color:#c0392b;
+}
+a.url {
   -ms-word-break: break-all;
 
   word-break: break-all;
@@ -258,7 +260,7 @@ h4 a, li a {
     }
     h3 {
       font-size: 18px;
-      margin: 15px 0 0 0;
+      margin: 10px 0 0 0;
     }
     h4 {
       font-size: 14px;
@@ -276,13 +278,14 @@ h4 a, li a {
 
     #bg {
       padding-top:20px;
+      padding-bottom:10px;
     }
     .container {
-      padding:5px 10mm;
+      padding:0 10mm;
       width:auto;
     }
     #bg h5 {
-      margin-bottom:10px;
+      margin-bottom:0;
     }
 
     .print a {
@@ -290,7 +293,7 @@ h4 a, li a {
       text-decoration: none;
     }
     .print .container {
-      padding: 5px 10mm;
+      padding: 0 10mm;
       margin: 0 auto;
     }
     .print #bg {
@@ -300,8 +303,8 @@ h4 a, li a {
     .print h1 {
       color:#000;
       border-bottom:2px solid #000;
-      margin-top:10mm;
-      margin-bottom:4mm;
+      margin-top:8mm;
+      margin-bottom:3mm;
     }
     .print #bg h5 {
       color:#000;
