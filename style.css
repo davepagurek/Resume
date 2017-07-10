@@ -153,6 +153,9 @@ p {
 a {
   color:#c0392b;
 }
+a.inline {
+  font-weight: normal;
+}
 a.url {
   -ms-word-break: break-all;
 
