@@ -1,0 +1,15 @@
+@media print {
+  .container {
+    margin: 15px !important;
+  }
+}
+
+hr {
+  page-break-after: always;
+  height: 0;
+  visibility: hidden;
+}
+
+li a {
+  font-weight: normal !important;
+}
