@@ -1,14 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'EB Garamond', serif;
+  /*font-family: 'Open Sans', Helvetica, sans-serif;*/
 }
 
 #bg {
-  background-image: url(https://www.davepagurek.com/wp-content/uploads/2014/08/cliffs-blurred.jpg);
+  /*background-image: url(https://www.davepagurek.com/wp-content/uploads/2014/08/cliffs-blurred.jpg);*/
   background-size: cover;
   background-position: center;
-  padding-top: 80px;
+  /*padding-top: 80px;*/
 }
 
 
@@ -59,6 +60,9 @@ body {
   display:-ms-flexbox;
   display:flex;
 }
+.container + .container {
+  padding-top: 0;
+}
 .header {
   display:block;
 }
@@ -96,27 +100,27 @@ li {
 }
 h1 {
   font-size:44px;
-  font-family: 'Josefin Sans', Georgia, serif;
+  /*font-family: 'Josefin Sans', Georgia, serif;*/
   font-weight:bold;
   margin: 10px 0 10px 0;
-  color:#FFF;
+  /*color:#FFF;*/
 }
 h1 a {
   color:inherit;
   text-decoration:none;
 }
 h2 {
-  font-family: 'Josefin Sans', serif;
+  /*font-family: 'Josefin Sans', serif;*/
   font-size:25px;
   margin: 20px 0 5px 0;
 }
 h3 {
-  font-family: 'Josefin Sans', serif;
+  /*font-family: 'Josefin Sans', serif;*/
   font-size:20px;
   margin: 14px 0 0 0;
 }
 h4 {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  /*font-family: 'Open Sans', Helvetica, sans-serif;*/
   font-size: 15px;
   line-height:18px;
   margin: 15px 0 0 0;
@@ -127,7 +131,7 @@ h4 .info {
   opacity: 0.8;
 }
 h4#references {
-  font-family: 'Josefin Sans', serif;
+  /*font-family: 'Josefin Sans', serif;*/
   font-size:20px;
   font-style: ;
   font-weight:normal;
@@ -137,9 +141,10 @@ h5 {
   font-size:15px;
   margin-top:2px;
   margin-bottom:-2px;
+  font-style: italic;
 }
 #bg h5 {
-  color: #FFF;
+  /*color: #FFF;*/
   font-style:normal;
   font-size: 14px;
   margin-bottom: 15px;
@@ -198,119 +203,93 @@ h4 a, li a {
   width:55%;
 }
 
-  @media all and (max-width: 880px) {
-    .container {
-      width:auto;
-      margin: 5px auto;
-    }
+@media all and (max-width: 880px) {
+  .container {
+    width:auto;
+    margin: 5px auto;
   }
-
-  @media screen and (max-width: 880px) {
-    h1 {
-      font-size: 35px;
-    }
+  .container + .container {
+    margin-top: 0;
   }
+}
 
-  @media screen and (max-width: 720px) {
-    .container {
-      display:block;
-    }
-    .sidebar {
-      width:auto;
-      padding-left:0;
-    }
+@media screen and (max-width: 880px) {
+  h1 {
+    font-size: 35px;
   }
+}
 
-  @page {
-    margin: 15mm 0;
+@media screen and (max-width: 720px) {
+  .container {
+    display:block;
   }
-
-  @page:first {
-    margin-top:0;
+  .sidebar {
+    width:auto;
+    padding-left:0;
   }
+}
+
+@page {
+  margin: 5mm 3mm;
+}
+
+@page:first {
+  margin-top:0;
+}
 
 
-  @media print {
-    * {
-      position:relative;
-    }
-    body {
-      margin: 0;
-    }
-    #buttons {
-      display:none;
-    }
-    h1 {
-      font-size:38px;
-      margin: 0;
-    }
-    h2, h3, h4 {
-      page-break-after:avoid;
-      page-break-inside: avoid;
-    }
-    ul {
-      page-break-inside: avoid;
-      page-break-before: avoid;
-      margin-bottom:0;
-    }
-    li {
-      page-break-inside: avoid;
-      page-break-before: avoid;
-    }
-    h2 {
-      font-size: 18px;
-      margin: 22px 0 5px 0;
-    }
-    h3 {
-      font-size: 18px;
-      margin: 10px 0 0 0;
-    }
-    h4 {
-      font-size: 14px;
-      line-height:16px;
-      margin-top:10px;
-    }
-    a {
-      font-weight:inherit;
-    }
-    p, li, .main h5 {
-      font-size:13px;
-      line-height:15px;
-      page-break-inside:avoid;
-    }
-
-    #bg {
-      padding-top:20px;
-      padding-bottom:10px;
-    }
-    .container {
-      padding:0 10mm;
-      width:auto;
-    }
-    #bg h5 {
-      margin-bottom:0;
-    }
-
-    .print a {
-      color:#000;
-      text-decoration: none;
-    }
-    .print .container {
-      padding: 0 10mm;
-      margin: 0 auto;
-    }
-    .print #bg {
-      background-image: none;
-      padding-top:0;
-    }
-    .print h1 {
-      color:#000;
-      border-bottom:2px solid #000;
-      margin-top:8mm;
-      margin-bottom:3mm;
-    }
-    .print #bg h5 {
-      color:#000;
-      margin: -5px 0 -2px 0;
-    }
+@media print {
+  * {
+    position:relative;
   }
+  body {
+    margin: 0;
+  }
+  #buttons {
+    display:none;
+  }
+  h1 {
+    font-size:38px;
+    margin: 0;
+  }
+  h2, h3, h4 {
+    page-break-after:avoid;
+    page-break-inside: avoid;
+  }
+  ul {
+    page-break-inside: avoid;
+    page-break-before: avoid;
+    margin-bottom:0;
+  }
+  li {
+    page-break-inside: avoid;
+    page-break-before: avoid;
+  }
+  h2 {
+    font-size: 18px;
+    margin: 22px 0 5px 0;
+  }
+  h3 {
+    font-size: 18px;
+    margin: 10px 0 0 0;
+  }
+  h4 {
+    font-size: 14px;
+    line-height:16px;
+    margin-top:10px;
+  }
+  a {
+    font-weight:inherit;
+  }
+  p, li, .main h5 {
+    font-size:13px;
+    line-height:15px;
+    page-break-inside:avoid;
+  }
+  .container:first-child {
+    margin-top: 0;
+  }
+  .container + .container {
+    margin-top: -30px;
+  }
+}

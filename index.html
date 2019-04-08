@@ -4,39 +4,22 @@
       Dave Pagurek van Mossel - Resume
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style-cv.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,300,700' rel='stylesheet' type='text/css'>
-    <script type="text/JavaScript">
-
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-8777691-1']);
-_gaq.push(['_setDomainName', 'davepagurek.com']);
-_gaq.push(['_setAllowLinker', true]);
-_gaq.push(['_trackPageview']);
-
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/JavaScript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-
-    </script>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700" rel="stylesheet" />
+    <!--<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:700' rel='stylesheet' type='text/css'>-->
+    <!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,300,700' rel='stylesheet' type='text/css'>-->
   </head>
 
   <!-- Remove class="print" to get a colour pdf -->
-  <body class="print">
-    <div id="bg">
-      <div class="container header">
-        <h1><a href="https://www.davepagurek.com">Dave Pagurek van Mossel</a></h1>
+  <body>
+    <div class="container header">
+      <h1><a href="https://www.davepagurek.com">Dave Pagurek van Mossel</a></h1>
 
-        <h5>University of Waterloo Software Engineering, class of 2019</h5>
+      <h5>University of Waterloo Software Engineering, class of 2019</h5>
 
-        <div id="buttons">
-          <a href="resume-colour.pdf">Colour PDF</a>
-          <a href="resume-bw.pdf">B/W PDF</a>
-        </div>
-
+      <div id="buttons">
+        <a href="resume-colour.pdf">Download PDF</a>
       </div>
     </div>
 
@@ -59,31 +42,39 @@ _gaq.push(['_trackPageview']);
 
         <h2>Awards</h2>
         <ul>
-          <li>Dean's honour list, 2017-2018</li>
+          <li>Dean's honour list, Winter 2017, Fall 2017, and Spring 2018</li>
           <li>First place in Waterloo EngHack, both fall and winter 2015</li>
-          <li>University of Waterloo President's Scholarship, 2014</li>
+          <li>University of Waterloo President's Scholarship, $2000 for a high school entrance average of over 90%, 2015</li>
           <li>Top 25% distinction on the Canadian Computing Competition, senior division, 2013 - 2014</li>
           <li>Jerry Dermer Memorial Prize in Engineering, 2014</li>
-          <li>Ottawa-Carleton District School Board Silver Medal, 2010-2014</li>
+          <li>Ottawa-Carleton District School Board Silver Medal, given to high school averages of over 90%, 2010-2014</li>
         </ul>
 
         <h2>Leadership</h2>
         <ul>
-          <li>Founder and Organizer, <a href="http://terriblehack.website">TerribleHack I - XI</a>, a hackathon for programming for its own sake rather than for a practical purpose, 2015-present</li>
+          <li>Founder and Organizer, <a href="http://terriblehack.website">TerribleHack I - XIII</a>, a hackathon for programming for its own sake rather than for a practical purpose, 2015-present</li>
           <li>Organizer, <a href="http://www.techretreat.ca/">Tech Retreat</a>, a hackathon for high school students, 2015-16</li>
           <!--<li>Instructor, <strong>Virtual Ventures Camp</strong>, Faculty of Engineering, Carleton University, 2012-2013</li>-->
         </ul>
-
-        <h2>Open-source</h2>
-        <ul><li>Contributed bug fixes and features to <a href="https://github.com/cruise-automation/rosbag.js">rosbag.js</a>, <a href="https://github.com/radiant-player/radiant-player-mac">Radiant Player</a>, a Facebook Messenger <a href="https://github.com/rsms/fb-mac-messenger">Mac client</a> and <a href="https://github.com/Alex-Rose/fb-messenger-cli">CLI</a>, <a href="https://github.com/jiangmiao/auto-pairs">Vim Auto-Pairs</a>, and <a href="https://github.com/emerald-lang/emerald">Emerald language</a></li></ul>
       </div>
 
       <div class="main">
+        <h2>Research</h2>
+
+        <h4><a href="https://www.davepagurek.com/programming/guiding-curves/">Controlling Procedural Modelling Interactively with Guiding Curves</a></h4>
+        <h5>Co-authored with Abhishek Madan, Andrew McBurney, Paul Bardea and Tammy Liu</h5>
+        <p>To appear in Graphics Interface 2019</p>
+        <ul>
+          <li>Defined a search function which, paired with Sequential Monte Carlo sampling, lets artists search the output of a generating grammar for 3D models in real time by drawing guiding curves</li>
+          <li>Awarded the title of top research project at the 2019 University of Waterloo Software Engineering capstone symposium</li>
+        </ul>
+
         <h2>Work</h2>
 
         <h4>Software Engineering Intern at <a href="https://figma.com">Figma</a>, <span class="info">San Francisco, California, Sept-Dec 2018</span></h4>
         <ul>
-          <li>Will be working on Figma's graphical vector editor using WebGL and C++</li>
+          <li>Added support for stacks of fill styles as backgrounds for components and frames into the rendering system</li>
+          <li>Implemented smart selections, enabling selections that look like lists or grids to be rearranged and reflowed</li>
         </ul>
         <!--<ul>-->
           <!--<li>Will be working on the Figma graphical editor</li>-->
@@ -92,7 +83,7 @@ _gaq.push(['_trackPageview']);
         <h4>Software Engineering Intern at <a href="https://getcruise.com">Cruise</a>, <span class="info">San Francisco, California, Jan-Apr 2018</span></h4>
         <ul>
           <!--<li>Researched and implemented path planning algorithms to improve driving in specific challening scenarios</li>-->
-          <li>Researched and developed a prototype library for general path planning, creating a quick initial path and using any given additional time to improve it</li>
+          <li>Researched and developed a prototype library for general path planning, creating a quick initial path and using any additional computation time given to improve it</li>
           <li>Visualized interactive search trees generated from the path planner using WebGL, communicating with ROS for input</li>
         </ul>
 
@@ -105,13 +96,13 @@ _gaq.push(['_trackPageview']);
         <h4>Software Engineering Intern at <a href="http://www.remind.com">Remind</a>, <span class="info">San Francisco, California, Sept-Dec 2016</span></h4>
         <ul>
           <li>Designed and implemented a REST API for district management, efficiently querying the graph of districts, schools, and users</li>
-          <li>Developed features for backend Ruby and Go payments services, plus accompanying client work in React and Redux</li>
+          <!--<li>Developed features for backend Ruby and Go payments services, plus accompanying client work in React and Redux</li>-->
         </ul>
 
         <h4>Software Developer Intern at <a href="http://www.liveathos.com">Athos</a>, <span class="info">Redwood City, California, Jan-Apr 2016</span></h4>
         <ul>
           <li>Created a C++ library for defining signal processing pipelines by parsing a JSON-based language definition into a tree of filters, allowing variable scoping and mapping over lists</li>
-          <li>Developed infrastructure and UI features in Objective C and Swift to allow users to run through athletic training plans and receive a score calculated from garment sensor data</li>
+          <!--<li>Developed infrastructure and UI features in Objective C and Swift to allow users to run through athletic training plans and receive a score calculated from garment sensor data</li>-->
         </ul>
 
         <h4>Software Developer Intern at <a href="http://www.shopify.com/">Shopify</a>, <span class="info">Ottawa, Canada, May-Aug 2015</span></h4>
@@ -120,28 +111,32 @@ _gaq.push(['_trackPageview']);
           <li>Introduced new language constructs in the Shopify Query Language parser allowing granular querying of data in Go and Ruby</li>
         </ul>
 
-        <h2>Projects</h2>
-        <!--<h5>With new projects always underway, check <a href="https://github.com/davepagurek/">github.com/davepagurek</a> for a full list</h5>-->
 
-        <h4><a href="https://www.davepagurek.com/programming/cs488">The Engulfed Cathedral</a>, 2018</h4>
-        <!--<h5>A raytraced 3D renderer and accompanying short film created with it for Waterloo's computer graphics course</h5>-->
+        <h2>Projects</h2>
+
+        <!--<h4><a href="https://www.davepagurek.com/programming/content-aware-music-fill/">Content-Aware Fill for Sequenced Music</a> (CS480 project), 2019</h4>-->
+        <!--<ul>-->
+          <!--<li>Explored an approach to gap filling in music scores using an LSTM network and Markov Chain Monte Carlo sampling</li>-->
+        <!--</ul>-->
+
+        <!--<hr />-->
+
+        <!--<h4><a href="https://www.davepagurek.com/programming/flute-synthesis/">Flute Synthesis</a> (CS489 project), 2019</h4>-->
+        <!--<ul>-->
+          <!--<li>Recorded and analyzed the sound of flute to break it down into its base components</li>-->
+          <!--<li>Constructed an expressive flute synthesizer combining additive and subtractive synthesis based on findings in the data</li>-->
+        <!--</ul>-->
+
+        <h4><a href="https://www.davepagurek.com/programming/cs488">The Engulfed Cathedral</a> (CS488 project), 2018</h4>
         <ul>
           <li>Created a raytraced 3D renderer and a short film created with it for Waterloo's computer graphics course</li>
-          <li>Implemented graphics techniques such as inverse procedural generation, photon mapped lighting, ambient occlusion, volumetric materials, constructive solid geometry, and inverse kinematics</li>
+          <li>Implemented graphics techniques such as silhouette-constrained procedural generation, photon mapped lighting, ambient occlusion, volumetric materials, constructive solid geometry, and inverse kinematics</li>
           <li>Won the prize for top project in the class of Spring 2018</li>
         </ul>
 
-        <h4><strong>Fast inverse procedural modelling</strong> (Capstone project), 2018-present</h4>
-        <ul>
-          <li>Researched cost functions and sampling techniques to control procedural modelling at interactive rates to enable iterative design</li>
-          <li>Created an API and editor to design procedural models with real-time feedback</li>
-          <li>Won the Yelp Early Bird prize for Capstone projects</li>
-        </ul>
-
         <!--<h4><a href="https://github.com/davepagurek/frontier3d">Frontier</a>, 2016</h4>-->
-        <!--<h5>A procedurally generated 3D landscape art project</h5>-->
         <!--<ul>-->
-          <!--[><li>Rendered procedurally generated 3D landscapes as an art project</li><]-->
+          <!--<li>Rendered procedurally generated 3D landscapes as an art project</li>-->
           <!--<li>Generated terrain using Perlin noise tesselated with Delaunay triangulation with houses and trees added using a grammar system</li>-->
         <!--</ul>-->
 
@@ -160,7 +155,7 @@ _gaq.push(['_trackPageview']);
           <!--[><li>Built a site in Perl and Mojolicious to share exported gifs and fork existing animations</li><]-->
           <!--</ul>-->
 
-        <!--<h4><strong>Scala compiler</strong>, made for CS241E, 2015</h4>-->
+        <!--<h4><strong>Scala compiler</strong> (CS241E project), 2015</h4>-->
         <!--<h5>A tool written in Scala to compile a subset of Scala into MIPS instructions</h5>-->
         <!--<ul>-->
           <!--<li>Parsed input into an AST for the Scala grammar to compile</li>-->
@@ -198,12 +193,12 @@ _gaq.push(['_trackPageview']);
         <!--<li>Designed and developed the website using HTML/CSS, JavaScript, and PHP/MySQL</li>-->
         <!--</ul>-->
 
-        <!--<h4><a href="https://www.davepagurek.com/math/">XCalc</a>, 2013-2014</h4>
-        <h5>A graphing calculator webapp and JavaScript algebra/calculus library</h5>
-        <ul>
-          <li>Modelled a Computer Algebra System in JS as a binary expression tree</li>
-          <li>Developed recursive algorithms to evaluate mathematical expressions and perform symbolic differentiation</li>
-        </ul>-->
+        <!--<h4><a href="https://www.davepagurek.com/math/">XCalc</a>, 2013-2014</h4>-->
+        <!--[><h5>A graphing calculator webapp and JavaScript algebra/calculus library</h5><]-->
+        <!--<ul>-->
+          <!--<li>Created a math parser supporting evaluation and symbolic differentiation</li>-->
+          <!--<li>Developed an interactive graphing application using the math parsing library</li>-->
+        <!--</ul>-->
 
         <!--<h4><a href="https://www.davepagurek.com/programming/random-bad-jokes">Random Bad Jokes</a>, a web database of user-submitted bad jokes, 2013</h4>-->
         <!--<ul>-->
@@ -215,6 +210,9 @@ _gaq.push(['_trackPageview']);
         <!--<li>Created a stack and linked list to store the towers and a recursive algorithm to solve the puzzle using C++</li>-->
         <!--<li>Developed a drag-and-drop interface for the game using Allegro</li>-->
         <!--</ul>-->
+
+        <h4><strong>Open-source contributions</strong></h4>
+        <ul><li>Contributed bug fixes and features to <a href="https://github.com/cruise-automation/rosbag.js">rosbag.js</a>, <a href="https://github.com/radiant-player/radiant-player-mac">Radiant Player</a>, a Facebook Messenger <a href="https://github.com/rsms/fb-mac-messenger">Mac client</a> and <a href="https://github.com/Alex-Rose/fb-messenger-cli">CLI</a>, <a href="https://github.com/jiangmiao/auto-pairs">Vim Auto-Pairs</a>, and <a href="https://github.com/emerald-lang/emerald">Emerald language</a></li></ul>
 
 
         <!--<h2>Creative Interests</h2>-->
@@ -232,12 +230,19 @@ _gaq.push(['_trackPageview']);
           <!--<li>Achieved <a href="https://www.davepagurek.com/film/a-walk-in-the-park/">bronze, national level</a>; <a href="https://www.davepagurek.com/film/on-the-beaten-path/">gold, provincial level</a>; <a href="https://www.davepagurek.com/film/wall-of-words/">gold, regional level</a>; 2011</li>-->
         <!--</ul>-->
 
-        <!--<h4><strong>Flautist</strong>, 2009-2015</h4>-->
+        <!--<h4><strong>Music recordings</strong>, 2011-present</h4>-->
         <!--<ul>-->
-          <!--<li>University of Waterloo Concert Band Club, 2014-2015</li>-->
+          <!--<li>Composed and performed <a href="https://soundcloud.com/davidpvm/afar-arranged-for-flute-duet">music for a flute duet</a>, 2018</li>-->
+          <!--<li>Composed and arranged <a href="https://soundcloud.com/davidpvm">synthesized music</a>, occasionally featuring flute and melodica, 2011-present</li>-->
+          <!--<li>Recorded many <a href="https://soundcloud.com/dont-cross-me">shamelessly bad covers</a> of pop music, 2014-present</li>-->
+        <!--</ul>-->
+
+        <!--<h4><strong>Flautist</strong>, 2009-present</h4>-->
+        <!--<ul>-->
+          <!--<li>University of Waterloo Concert Band Club, 2014-2015 and 2018-present</li>-->
           <!--<li>Lisgar Collegiate Wind Ensemble, 2012-2014</li>-->
           <!--<li>Lisgar Collegiate Senior Orchestra, 2013-2014</li>-->
-          <!--</ul>-->
+        <!--</ul>-->
       </div>
     </div>
   </body>

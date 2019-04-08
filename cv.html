@@ -6,23 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style-cv.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700" rel="stylesheet" />
+    <!--<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:700' rel='stylesheet' type='text/css'>-->
+    <!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,300,700' rel='stylesheet' type='text/css'>-->
   </head>
 
   <!-- Remove class="print" to get a colour pdf -->
   <body>
-    <div id="bg">
-      <div class="container header">
-        <h1><a href="https://www.davepagurek.com">Dave Pagurek van Mossel</a></h1>
+    <div class="container header">
+      <h1><a href="https://www.davepagurek.com">Dave Pagurek van Mossel</a></h1>
 
-        <h5>University of Waterloo Software Engineering, class of 2019</h5>
+      <h5>University of Waterloo Software Engineering, class of 2019</h5>
 
-        <div id="buttons">
-          <a href="resume-colour.pdf">Colour PDF</a>
-          <a href="resume-bw.pdf">B/W PDF</a>
-        </div>
-
+      <div id="buttons">
+        <a href="resume-colour.pdf">Colour PDF</a>
+        <a href="resume-bw.pdf">B/W PDF</a>
       </div>
     </div>
 
@@ -55,19 +53,29 @@
 
         <h2>Leadership</h2>
         <ul>
-          <li>Founder and Organizer, <a href="http://terriblehack.website">TerribleHack I - XI</a>, a hackathon for programming for its own sake rather than for a practical purpose, 2015-present</li>
+          <li>Founder and Organizer, <a href="http://terriblehack.website">TerribleHack I - XIII</a>, a hackathon for programming for its own sake rather than for a practical purpose, 2015-present</li>
           <li>Organizer, <a href="http://www.techretreat.ca/">Tech Retreat</a>, a hackathon for high school students, 2015-16</li>
           <!--<li>Instructor, <strong>Virtual Ventures Camp</strong>, Faculty of Engineering, Carleton University, 2012-2013</li>-->
         </ul>
       </div>
 
       <div class="main">
+        <h2>Research</h2>
+
+        <h4><a href="https://www.davepagurek.com/programming/guiding-curves/">Controlling Procedural Modelling Interactively with Guiding Curves</a></h4>
+        <h5>Co-authored with Abhishek Madan, Andrew McBurney, Paul Bardea and Tammy Liu</h5>
+        <p>To appear in Graphics Interface 2019</p>
+        <ul>
+          <li>Defined a search function which, paired with Sequential Monte Carlo sampling, lets artists search the output of a generating grammar for 3D models in real time by drawing guiding curves</li>
+          <li>Awarded the title of top research project at the 2019 University of Waterloo Software Engineering capstone symposium</li>
+        </ul>
+
         <h2>Work</h2>
 
         <h4>Software Engineering Intern at <a href="https://figma.com">Figma</a>, <span class="info">San Francisco, California, Sept-Dec 2018</span></h4>
         <ul>
-          <li>Added rendering system support for stacks of fill styles as backgrounds for components</li>
-          <li>Implemented smart selections, enabling selections that look like lists to be rearranged and have items reflow</li>
+          <li>Added support for stacks of fill styles as backgrounds for components and frames into the rendering system</li>
+          <li>Implemented smart selections, enabling selections that look like lists or grids to be rearranged and reflowed</li>
         </ul>
         <!--<ul>-->
           <!--<li>Will be working on the Figma graphical editor</li>-->
@@ -104,22 +112,26 @@
           <li>Introduced new language constructs in the Shopify Query Language parser allowing granular querying of data in Go and Ruby</li>
         </ul>
 
-        <h2>Projects</h2>
-        <!--<h5>With new projects always underway, check <a href="https://github.com/davepagurek/">github.com/davepagurek</a> for a full list</h5>-->
 
-        <h4><a href="https://github.com/calder-gl/calder">Controlling Procedural Modelling Interactively with Guiding Curves</a> (Capstone research project), 2018</h4>
+        <h2>Projects</h2>
+
+        <h4><a href="https://www.davepagurek.com/programming/content-aware-music-fill/">Content-Aware Fill for Sequenced Music</a> (CS480 project), 2019</h4>
         <ul>
-          <li>Researched and implemented cost functions to pair with Sequential Monte Carlo sampling to let artists interactively control procedural models</li>
-          <li>Created an editor to design a procedural models grammar and search model space with real-time feedback by drawing guiding curves</li>
-          <li>Won the Yelp Early Bird prize for Capstone projects</li>
+          <li>Explored an approach to gap filling in music scores using an LSTM network and Markov Chain Monte Carlo sampling</li>
         </ul>
 
         <hr />
 
+        <h4><a href="https://www.davepagurek.com/programming/flute-synthesis/">Flute Synthesis</a> (CS489 project), 2019</h4>
+        <ul>
+          <li>Recorded and analyzed the sound of flute to break it down into its base components</li>
+          <li>Constructed an expressive flute synthesizer combining additive and subtractive synthesis based on findings in the data</li>
+        </ul>
+
         <h4><a href="https://www.davepagurek.com/programming/cs488">The Engulfed Cathedral</a> (CS488 project), 2018</h4>
         <ul>
           <li>Created a raytraced 3D renderer and a short film created with it for Waterloo's computer graphics course</li>
-          <li>Implemented graphics techniques such as inverse procedural generation, photon mapped lighting, ambient occlusion, volumetric materials, constructive solid geometry, and inverse kinematics</li>
+          <li>Implemented graphics techniques such as silhouette-constrained procedural generation, photon mapped lighting, ambient occlusion, volumetric materials, constructive solid geometry, and inverse kinematics</li>
           <li>Won the prize for top project in the class of Spring 2018</li>
         </ul>
 
@@ -145,12 +157,12 @@
           <!--[><li>Built a site in Perl and Mojolicious to share exported gifs and fork existing animations</li><]-->
           <!--</ul>-->
 
-        <h4><strong>Scala compiler</strong> (CS241E project), 2015</h4>
-        <h5>A tool written in Scala to compile a subset of Scala into MIPS instructions</h5>
-        <ul>
-          <li>Parsed input into an AST for the Scala grammar to compile</li>
-          <li>Implemented closures, tail recursion, type checking, and garbage collection</li>
-        </ul>
+        <!--<h4><strong>Scala compiler</strong> (CS241E project), 2015</h4>-->
+        <!--<h5>A tool written in Scala to compile a subset of Scala into MIPS instructions</h5>-->
+        <!--<ul>-->
+          <!--<li>Parsed input into an AST for the Scala grammar to compile</li>-->
+          <!--<li>Implemented closures, tail recursion, type checking, and garbage collection</li>-->
+        <!--</ul>-->
 
         <!--<h4><a href="https://www.davepagurek.com/programming/chordico">Chordi.co</a>, made at PennApps XII, 2015</h4>
         <h5>A webapp for using machine learning to procedurally generate music</h5>
@@ -183,12 +195,12 @@
         <!--<li>Designed and developed the website using HTML/CSS, JavaScript, and PHP/MySQL</li>-->
         <!--</ul>-->
 
-        <h4><a href="https://www.davepagurek.com/math/">XCalc</a>, 2013-2014</h4>
-        <!--<h5>A graphing calculator webapp and JavaScript algebra/calculus library</h5>-->
-        <ul>
-          <li>Created a math parser supporting evaluation and symbolic differentiation</li>
-          <li>Developed an interactive graphing application using the math parsing library</li>
-        </ul>
+        <!--<h4><a href="https://www.davepagurek.com/math/">XCalc</a>, 2013-2014</h4>-->
+        <!--[><h5>A graphing calculator webapp and JavaScript algebra/calculus library</h5><]-->
+        <!--<ul>-->
+          <!--<li>Created a math parser supporting evaluation and symbolic differentiation</li>-->
+          <!--<li>Developed an interactive graphing application using the math parsing library</li>-->
+        <!--</ul>-->
 
         <!--<h4><a href="https://www.davepagurek.com/programming/random-bad-jokes">Random Bad Jokes</a>, a web database of user-submitted bad jokes, 2013</h4>-->
         <!--<ul>-->

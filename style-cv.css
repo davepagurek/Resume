@@ -1,9 +1,3 @@
-@media print {
-  .container {
-    margin: 15px !important;
-  }
-}
-
 hr {
   page-break-after: always;
   height: 0;
@@ -12,4 +6,12 @@ hr {
 
 li a {
   font-weight: normal !important;
+}
+
+@page {
+  margin: 10mm 5mm 10mm 5mm !important;
+}
+
+@page:first {
+  margin-top:5mm !important;
 }
