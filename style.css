@@ -126,7 +126,7 @@ h4 {
   margin: 15px 0 0 0;
   font-weight: normal;
 }
-h4 .info {
+h4 .info, ul .info {
   font-size: 0.8em;
   opacity: 0.8;
 }
