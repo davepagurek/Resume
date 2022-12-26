@@ -38,14 +38,14 @@
           <li>dave@davepagurek.com</li>
           <li><a class="url" href="https://www.davepagurek.com">davepagurek.com</a></li>
           <li><a class="url" href="https://github.com/davepagurek/">github.com/davepagurek</a></li>
-          <li>(613) 875-4951</li>
         </ul>
 
         <h2>Skills</h2>
         <ul>
           <li>Professional experience working with <strong>Javascript, Typescript, C++, GLSL, Ruby, Java, Go, Swift, SQL, Git,</strong> and <strong>Unix</strong></li>
+          <li>Professional experience employing a wide variety of real-time computer graphics techniques</li>
           <!--<li>Highly proficient with CSS layout models and experience writing performant animations</li>-->
-          <li>Passion for creative approaches to visual and algorithmic design problems</li>
+          <!--<li>Passion for creative approaches to visual and algorithmic design problems</li>-->
         </ul>
 
         <h2>Awards</h2>
@@ -68,24 +68,13 @@
       </div>
 
       <div class="main">
-        <h2>Research</h2>
-
-        <h4><a href="https://www.davepagurek.com/programming/strokestrip/">StrokeStrip: Joint Parameterization and Fitting of Stroke Clusters</a></h4>
-        <h5>Co-authored with Chenxi Liu, Nicholas Vining, Mikhail Bessmeltsev and Alla Sheffer</h5>
-        <p>SIGGRAPH 2021</p>
-        <ul>
-          <li>Developed an algorithm to fit clean lines to clusters of sketched vector strokes by modeling a discrete-continuous optimization problem that can be iteratively solved</li>
-        </ul>
-
-        <h4><a href="https://www.davepagurek.com/programming/guiding-curves/">Controlling Procedural Modelling Interactively with Guiding Curves</a></h4>
-        <h5>Co-authored with Abhishek Madan, Andrew McBurney, Paul Bardea and Tammy Liu</h5>
-        <p>Proceedings of Graphics Interface 2019</p>
-        <ul>
-          <li>Defined a Sequential Monte Carlo sampling-based search function which lets artists search the output of a 3D model generating grammar in real time by drawing guiding curves</li>
-          <li>Awarded top research project at the UWaterloo Software Engineering capstone symposium</li>
-        </ul>
 
         <h2>Work</h2>
+
+        <h4>Full Stack Developer at <a href="https://usebutter.com">Butter Creatives</a>, <span class="info">Toronto, Ontario, Sept 2020-Present</span></h4>
+        <ul>
+          <li>Developed infrastructure for modular creative code components to support building motion graphics content</li>
+        </ul>
 
         <h4>Software Engineering Intern at <a href="https://figma.com">Figma</a>, <span class="info">San Francisco, California, Sept-Dec 2018</span></h4>
         <ul>
@@ -105,8 +94,8 @@
 
         <h4>Software Engineering Intern at <a href="http://www.google.com">Google</a>, <span class="info">Mountain View, California, May-Aug 2017</span></h4>
         <ul>
-          <li>Investigated ways of using machine learning to solve problems on Internet of Things devices</li>
-          <li>Profiled and adapted Tensorflow and OpenCV vision models for low-end hardware</li>
+          <li>Adapted machine learning models for Internet of Things devices</li>
+          <!--<li>Profiled and adapted Tensorflow and OpenCV vision models for low-end hardware</li>-->
         </ul>
 
         <h4>Software Engineering Intern at <a href="http://www.remind.com">Remind</a>, <span class="info">San Francisco, California, Sept-Dec 2016</span></h4>
@@ -125,7 +114,7 @@
         <!--</ul>-->
 
 
-        <h2>Projects</h2>
+        <!--<h2>Projects</h2>-->
 
         <!--<h4><a href="https://www.davepagurek.com/programming/content-aware-music-fill/">Content-Aware Fill for Sequenced Music</a> (CS480 project), 2019</h4>-->
         <!--<ul>-->
@@ -140,12 +129,12 @@
           <!--<li>Constructed an expressive flute synthesizer combining additive and subtractive synthesis based on findings in the data</li>-->
         <!--</ul>-->
 
-        <h4><a href="https://www.davepagurek.com/programming/cs488">The Engulfed Cathedral</a> (CS488 project), 2018</h4>
-        <ul>
-          <li>Created a raytraced 3D renderer and a short film created with it for Waterloo's computer graphics course</li>
-          <li>Implemented graphics techniques such as silhouette-constrained procedural generation, photon mapped lighting, ambient occlusion, volumetric materials, constructive solid geometry, and inverse kinematics</li>
-          <li>Won the prize for top project in the class of Spring 2018</li>
-        </ul>
+        <!--<h4><a href="https://www.davepagurek.com/programming/cs488">The Engulfed Cathedral</a> (CS488 project), 2018</h4>-->
+        <!--<ul>-->
+          <!--<li>Created a raytraced 3D renderer and a short film created with it for Waterloo's computer graphics course</li>-->
+          <!--<li>Implemented graphics techniques such as silhouette-constrained procedural generation, photon mapped lighting, ambient occlusion, volumetric materials, constructive solid geometry, and inverse kinematics</li>-->
+          <!--<li>Won the prize for top project in the class of Spring 2018</li>-->
+        <!--</ul>-->
 
         <!--<h4><a href="https://github.com/davepagurek/frontier3d">Frontier</a>, 2016</h4>-->
         <!--<ul>-->
@@ -224,10 +213,38 @@
         <!--<li>Developed a drag-and-drop interface for the game using Allegro</li>-->
         <!--</ul>-->
 
-        <h4><strong>Open-source contributions</strong></h4>
+        <h2><strong>Open Source</strong></h2>
+
+        <h4>WebGL Steward for <a href="https://p5js.org/">p5.js</a>, <span class="info">July 2022-Present</span></h4>
         <ul>
-          <li>Rewrote the GIF decoder in <a href="https://github.com/processing/p5.js/">p5.js</a> to support all background disposal codes</li>
+          <li>Implemented features and fixed bugs related to shape and line drawing, shaders, gif handling, and math</li>
+          <li>Reviewed code and answered questions</li>
+          <li>Wrote <a href="https://github.com/davepagurek/glsl-autodiff">glsl-autodiff</a>, a library to deform 3D models in real time in shaders</li>
+          <li>Wrote <a href="https://github.com/davepagurek/p5.Framebuffer">p5.Framebuffer</a>, a library to efficiently draw to layers and add blur and shadows</li>
+          <li>Wrote <a href="https://github.com/davepagurek/p5.buildGeometry">p5.buildGeometry</a>, a library to dynamically construct 3D models</li>
+        </ul>
+
+        <h4>Miscellaneous, <span class="info">2015-Present</span></h4>
+        <ul>
+          <!--<li>Rewrote the GIF decoder in <a href="https://github.com/processing/p5.js/">p5.js</a> to support all background disposal codes</li>-->
           <li>Contributed bug fixes and features to <a href="https://github.com/cruise-automation/rosbag.js">rosbag.js</a>, <a href="https://github.com/radiant-player/radiant-player-mac">Radiant Player</a>, a Facebook Messenger <a href="https://github.com/rsms/fb-mac-messenger">Mac client</a> and <a href="https://github.com/Alex-Rose/fb-messenger-cli">CLI</a>, and <a href="https://github.com/jiangmiao/auto-pairs">Vim Auto-Pairs</a></li>
+        </ul>
+
+        <h2>Research</h2>
+
+        <h4><a href="https://www.davepagurek.com/programming/strokestrip/">StrokeStrip: Joint Parameterization and Fitting of Stroke Clusters</a></h4>
+        <h5>Co-authored with Chenxi Liu, Nicholas Vining, Mikhail Bessmeltsev and Alla Sheffer</h5>
+        <p>SIGGRAPH 2021</p>
+        <ul>
+          <li>Developed an algorithm to fit clean lines to clusters of sketched vector strokes by modeling a discrete-continuous optimization problem that can be iteratively solved</li>
+        </ul>
+
+        <h4><a href="https://www.davepagurek.com/programming/guiding-curves/">Controlling Procedural Modelling Interactively with Guiding Curves</a></h4>
+        <h5>Co-authored with Abhishek Madan, Andrew McBurney, Paul Bardea and Tammy Liu</h5>
+        <p>Proceedings of Graphics Interface 2019</p>
+        <ul>
+          <li>Defined a Sequential Monte Carlo sampling-based search function which lets artists search the output of a 3D model generating grammar in real time by drawing guiding curves</li>
+          <!--<li>Awarded top research project at the UWaterloo Software Engineering capstone symposium</li>-->
         </ul>
 
 
